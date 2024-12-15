@@ -1,4 +1,4 @@
-internal class Livre
+public class Livre
 {
     private string ISBN;
     private string Titre;
