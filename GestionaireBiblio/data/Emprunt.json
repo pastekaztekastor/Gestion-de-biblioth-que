@@ -1,0 +1,8 @@
+[
+    {
+      "ISBNLivre": "1234567890",
+      "IDEmprunteur": 1,
+      "DateSortie": "2024-12-15T10:30:00",
+      "DateRetour": "2024-12-22T10:30:00"
+    }
+]

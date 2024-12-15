@@ -1,0 +1,9 @@
+[
+    {
+      "ISBN": "1234567890",
+      "Titre": "Exemple de Livre",
+      "Auteurs": ["Auteur 1", "Auteur 2"],
+      "AnneePublication": 2023,
+      "Genre": "Roman"
+    }
+  ]
