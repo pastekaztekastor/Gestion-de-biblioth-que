@@ -6,14 +6,6 @@ public class Livre
     private int AnneePublication;
     private string Genre;
 
-    /// <summary>
-    /// 
-    /// </summary>
-    /// <param name="isbn"></param>
-    /// <param name="titre"></param>
-    /// <param name="auteurs"></param>
-    /// <param name="anneePublication"></param>
-    /// <param name="genre"></param>
     public Livre(string isbn, string titre, List<string> auteurs, int anneePublication, string genre)
     {
         this.ISBN = isbn;
@@ -23,68 +15,21 @@ public class Livre
         this.Genre = genre;
     }
 
-    public void SetISBN(string isbn)
-    {
-        this.ISBN = isbn;
-    }
+// GET
+    public string       GetISBN             ()                      {return this.ISBN;}
+    public string       GetTitre            ()                      {return this.Titre;}
+    public List<string> GetAuteurs          ()                      {return this.Auteurs;}
+    public int          GetAnneePublication ()                      {return this.AnneePublication;}
+    public string       GetGenre            ()                      {return this.Genre;}
 
-    public string GetISBN()
-    {
-        return this.ISBN;
-    }
+// SET
+    public void         SetISBN             (string isbn)           {this.ISBN = isbn;}
+    public void         SetTitre            (string titre)          {this.Titre = titre;}
+    public void         SetAuteurs          (List<string> auteurs)  {this.Auteurs = auteurs;}
+    public void         SetAnneePublication (int annee)             {this.AnneePublication = annee;}
+    public void         SetGenre            (string genre)          {this.Genre = genre;}
 
-    public void SetTitre(string titre)
-    {
-        this.Titre = titre;
-    }
-
-    public string GetTitre()
-    {
-        return this.Titre;
-    }
-
-    public void SetAuteurs(List<string> auteurs)
-    {
-        this.Auteurs = auteurs;
-    }
-
-    public List<string> GetAuteurs()
-    {
-        return this.Auteurs;
-    }
-
-    public void SetAnneePublication(int annee)
-    {
-        this.AnneePublication = annee;
-    }
-
-    public int GetAnneePublication()
-    {
-        return this.AnneePublication;
-    }
-
-    public void SetGenre(string genre)
-    {
-        this.Genre = genre;
-    }
-
-    public string GetGenre()
-    {
-        return this.Genre;
-    }
-
-    public void AjouterAuteur(string auteur)
-    {
-        this.Auteurs.Add(auteur);
-    }
-
-    public void SupprimerAuteur(string auteur)
-    {
-        this.Auteurs.Remove(auteur);
-    }
-
-    private void ValiderISBN()
-    {
-        // Logic to validate ISBN.
-    }
+// Autre
+    public void         AjouterAuteur       (string auteur)         {this.Auteurs.Add(auteur);}
+    public void         SupprimerAuteur     (string auteur)         {this.Auteurs.Remove(auteur);}
 }
