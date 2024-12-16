@@ -1,9 +1,212 @@
 [
-    {
-      "ISBN": "1234567890",
-      "Titre": "Exemple de Livre",
-      "Auteurs": ["Auteur 1", "Auteur 2"],
-      "AnneePublication": 2023,
-      "Genre": "Roman"
-    }
-  ]
+  {
+    "ISBN": "9780140449136",
+    "Titre": "Crime et Châtiment",
+    "Auteurs": ["Fiodor Dostoïevski"],
+    "AnneePublication": 1866,
+    "Genre": "Roman"
+  },
+  {
+    "ISBN": "9780141182803",
+    "Titre": "1984",
+    "Auteurs": ["George Orwell"],
+    "AnneePublication": 1949,
+    "Genre": "Dystopie"
+  },
+  {
+    "ISBN": "9782070368228",
+    "Titre": "L'Étranger",
+    "Auteurs": ["Albert Camus"],
+    "AnneePublication": 1942,
+    "Genre": "Roman"
+  },
+  {
+    "ISBN": "9780307277671",
+    "Titre": "Sapiens : Une brève histoire de l'humanité",
+    "Auteurs": ["Yuval Noah Harari"],
+    "AnneePublication": 2011,
+    "Genre": "Essai"
+  },
+  {
+    "ISBN": "9780143039433",
+    "Titre": "Moby Dick",
+    "Auteurs": ["Herman Melville"],
+    "AnneePublication": 1851,
+    "Genre": "Aventure"
+  },
+  {
+    "ISBN": "9781451673319",
+    "Titre": "Fahrenheit 451",
+    "Auteurs": ["Ray Bradbury"],
+    "AnneePublication": 1953,
+    "Genre": "Science-fiction"
+  },
+  {
+    "ISBN": "9780743273565",
+    "Titre": "Gatsby le Magnifique",
+    "Auteurs": ["F. Scott Fitzgerald"],
+    "AnneePublication": 1925,
+    "Genre": "Roman"
+  },
+  {
+    "ISBN": "9780140449266",
+    "Titre": "Anna Karénine",
+    "Auteurs": ["Léon Tolstoï"],
+    "AnneePublication": 1878,
+    "Genre": "Roman"
+  },
+  {
+    "ISBN": "9780553213119",
+    "Titre": "Les Misérables",
+    "Auteurs": ["Victor Hugo"],
+    "AnneePublication": 1862,
+    "Genre": "Roman historique"
+  },
+  {
+    "ISBN": "9780679732761",
+    "Titre": "Beloved",
+    "Auteurs": ["Toni Morrison"],
+    "AnneePublication": 1987,
+    "Genre": "Roman"
+  },
+  {
+    "ISBN": "9780547928227",
+    "Titre": "Le Seigneur des Anneaux",
+    "Auteurs": ["J.R.R. Tolkien"],
+    "AnneePublication": 1954,
+    "Genre": "Fantasy"
+  },
+  {
+    "ISBN": "9780439139601",
+    "Titre": "Harry Potter et le Prisonnier d'Azkaban",
+    "Auteurs": ["J.K. Rowling"],
+    "AnneePublication": 1999,
+    "Genre": "Fantasy"
+  },
+  {
+    "ISBN": "9780590353427",
+    "Titre": "Harry Potter à l'École des Sorciers",
+    "Auteurs": ["J.K. Rowling"],
+    "AnneePublication": 1997,
+    "Genre": "Fantasy"
+  },
+  {
+    "ISBN": "9780143127741",
+    "Titre": "The Road",
+    "Auteurs": ["Cormac McCarthy"],
+    "AnneePublication": 2006,
+    "Genre": "Post-apocalyptique"
+  },
+  {
+    "ISBN": "9780099518471",
+    "Titre": "Orgueil et Préjugés",
+    "Auteurs": ["Jane Austen"],
+    "AnneePublication": 1813,
+    "Genre": "Roman"
+  },
+  {
+    "ISBN": "9780143039433",
+    "Titre": "Don Quichotte",
+    "Auteurs": ["Miguel de Cervantès"],
+    "AnneePublication": 1605,
+    "Genre": "Aventure"
+  },
+  {
+    "ISBN": "9780199535569",
+    "Titre": "Le Prince",
+    "Auteurs": ["Niccolò Machiavel"],
+    "AnneePublication": 1532,
+    "Genre": "Politique"
+  },
+  {
+    "ISBN": "9780156027328",
+    "Titre": "Le Petit Prince",
+    "Auteurs": ["Antoine de Saint-Exupéry"],
+    "AnneePublication": 1943,
+    "Genre": "Fable"
+  },
+  {
+    "ISBN": "9780486284736",
+    "Titre": "Les Aventures de Sherlock Holmes",
+    "Auteurs": ["Arthur Conan Doyle"],
+    "AnneePublication": 1892,
+    "Genre": "Policier"
+  },
+  {
+    "ISBN": "9780307947055",
+    "Titre": "Un homme invisible",
+    "Auteurs": ["Ralph Ellison"],
+    "AnneePublication": 1952,
+    "Genre": "Roman"
+  },
+  {
+    "ISBN": "9780451524935",
+    "Titre": "Animal Farm",
+    "Auteurs": ["George Orwell"],
+    "AnneePublication": 1945,
+    "Genre": "Satire"
+  },
+  {
+    "ISBN": "9780143039433",
+    "Titre": "Le Vieil Homme et la Mer",
+    "Auteurs": ["Ernest Hemingway"],
+    "AnneePublication": 1952,
+    "Genre": "Aventure"
+  },
+  {
+    "ISBN": "9780385490818",
+    "Titre": "La Bible",
+    "Auteurs": ["Auteurs Divers"],
+    "AnneePublication": 0,
+    "Genre": "Religion"
+  },
+  {
+    "ISBN": "9780399501487",
+    "Titre": "L'Attrape-cœurs",
+    "Auteurs": ["J.D. Salinger"],
+    "AnneePublication": 1951,
+    "Genre": "Roman"
+  },
+  {
+    "ISBN": "9780679732761",
+    "Titre": "À l'Est d'Éden",
+    "Auteurs": ["John Steinbeck"],
+    "AnneePublication": 1952,
+    "Genre": "Roman"
+  },
+  {
+    "ISBN": "9780142437230",
+    "Titre": "Frankenstein",
+    "Auteurs": ["Mary Shelley"],
+    "AnneePublication": 1818,
+    "Genre": "Horreur"
+  },
+  {
+    "ISBN": "9780140447934",
+    "Titre": "Le Rouge et le Noir",
+    "Auteurs": ["Stendhal"],
+    "AnneePublication": 1830,
+    "Genre": "Roman"
+  },
+  {
+    "ISBN": "9780316769488",
+    "Titre": "L'Attrape-cœurs",
+    "Auteurs": ["J.D. Salinger"],
+    "AnneePublication": 1951,
+    "Genre": "Roman"
+  },
+  {
+    "ISBN": "9780743477116",
+    "Titre": "Macbeth",
+    "Auteurs": ["William Shakespeare"],
+    "AnneePublication": 1606,
+    "Genre": "Tragédie"
+  },
+  {
+    "ISBN": "9781501127625",
+    "Titre": "Écoute ton cœur",
+    "Auteurs": ["Susane Colasanti"],
+    "AnneePublication": 2018,
+    "Genre": "Jeunesse"
+  }
+]

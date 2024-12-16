@@ -1,27 +1,18 @@
-﻿internal class Program
+﻿using GestionaireBiblio.src.Services;
+
+internal class Program
 {
     private static void Main(string[] args)
     {
         Console.WriteLine("Bienvenue dans le Gestionnaire de Bibliothèque!");
 
-        // Exemple d'utilisation des classes et vues
-        var livreView = new LivresView();
-        //var emprunteurView = new EmprunteurView();
+        // Chargement de la data
+        DatabaseServices dbs = new DatabaseServices();
+        List<Livre> livres = dbs.LoadLivre("../../../data/livres.json");
+        List<Emprunt> emprunts = dbs.LoadEmprunt("../../../data/emprunt.json");
+        List<Emprunteur> emprunteurs = dbs.LoadEmprunteur("../../../data/emprunteur.json");
 
-        // Exemple : Créer un nouvel emprunteur
-        //var nouvelEmprunteur = emprunteurView.SaisirEmprunteur();
-
-        // Exemple : Afficher un livre
-        var auteurs = new List<string> { "George Orwell" };
-        Livre livre = new Livre(
-            isbn: "9780451524935",
-            titre: "1984",
-            auteurs: auteurs,
-            anneePublication: 1949,
-            genre: "Dystopie"
-        );
-
-        livreView.AfficherLivre(livre);
+        // Création de View
 
         // Fin du programme
         Console.WriteLine("Merci d'avoir utilisé le Gestionnaire de Bibliothèque !");

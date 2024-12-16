@@ -1,10 +1,20 @@
+using System.Data;
+using System.Text.Json.Serialization;
 public class Livre
 {
-    private string ISBN;
-    private string Titre;
-    private List<string> Auteurs;
-    private int AnneePublication;
-    private string Genre;
+
+    [JsonPropertyName("ISBN")]
+    public string ISBN { get; set; } = string.Empty; // Valeur par défaut
+    [JsonPropertyName("Titre")]
+    public string Titre { get; set; } = string.Empty; // Valeur par défaut
+    [JsonPropertyName("Auteurs")]
+    public List<string> Auteurs { get; set; } = new List<String>(); // Valeur par défaut
+    [JsonPropertyName("AnneePublication")]
+    public int AnneePublication { get; set; } = 0; // Valeur par défaut
+    [JsonPropertyName("Genre")]
+    public string Genre { get; set; } = string.Empty; // Valeur par défaut 
+
+    public Livre() { } // Constructeur sans paramètre pour la désérialisation
 
     public Livre(string isbn, string titre, List<string> auteurs, int anneePublication, string genre)
     {
@@ -14,20 +24,6 @@ public class Livre
         this.AnneePublication = anneePublication;
         this.Genre = genre;
     }
-
-// GET
-    public string       GetISBN             ()                      {return this.ISBN;}
-    public string       GetTitre            ()                      {return this.Titre;}
-    public List<string> GetAuteurs          ()                      {return this.Auteurs;}
-    public int          GetAnneePublication ()                      {return this.AnneePublication;}
-    public string       GetGenre            ()                      {return this.Genre;}
-
-// SET
-    public void         SetISBN             (string isbn)           {this.ISBN = isbn;}
-    public void         SetTitre            (string titre)          {this.Titre = titre;}
-    public void         SetAuteurs          (List<string> auteurs)  {this.Auteurs = auteurs;}
-    public void         SetAnneePublication (int annee)             {this.AnneePublication = annee;}
-    public void         SetGenre            (string genre)          {this.Genre = genre;}
 
 // Autre
     public void         AjouterAuteur       (string auteur)         {this.Auteurs.Add(auteur);}

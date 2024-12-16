@@ -1,9 +1,18 @@
+using System.Data;
+using System.Text.Json.Serialization;
+
 public class Emprunteur
 {
-    private int ID;
-    private string Nom;
-    private string Prenom;
-    private string Mail;
+    [JsonPropertyName("ID")]
+    public int ID { get; set; } = 0;
+    [JsonPropertyName("Nom")]
+    public string Nom { get; set; } = string.Empty;
+    [JsonPropertyName("Prenom")]
+    public string Prenom { get; set; } = string.Empty;
+    [JsonPropertyName("Mail")]
+    public string Mail { get; set; } = string.Empty;
+
+    public Emprunteur() { } // Constructeur sans paramètre pour la désérialisation
 
     public Emprunteur(int id, string nom, string prenom, string mail)
     {

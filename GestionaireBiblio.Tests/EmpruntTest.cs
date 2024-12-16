@@ -51,4 +51,9 @@ public class EmpruntTest
         Assert.That(emprunt.GetIDEmprunteur(), Is.EqualTo(1));
         Assert.That(emprunt.GetDateRetour(), Is.EqualTo(DateTime.MinValue));
     }
+
+    [Test]
+    public void CalculerDureeEmprunt(){
+        
+    }
 }

@@ -19,38 +19,57 @@ public class Emprunt
 
     public Emprunt(string isbnLivre, int idEmprunteur, DateTime dateSortie, DateTime dateRetour)
     {
-        this.ISBNLivre = isbnLivre;
-        this.IDEmprunteur = idEmprunteur;
-        this.DateSortie = dateSortie;
-        this.DateRetour = dateRetour;
+        if (dateRetour<dateSortie)
+        {
+            throw new Exception("La date de sortie est posterieure à celle d'entrer.");
+        }
+        else
+        {
+            this.ISBNLivre = isbnLivre;
+            this.IDEmprunteur = idEmprunteur;
+            this.DateSortie = dateSortie;
+            this.DateRetour = dateRetour;
+        }
     }
 
     public Emprunt(Livre livre, Emprunteur emprunteur)
     {
-        this.ISBNLivre = livre.GetISBN();
+        this.ISBNLivre = livre.ISBN;
         this.IDEmprunteur = emprunteur.GetID();
         this.DateSortie = DateTime.Now;
-        this.DateRetour = DateTime.MinValue;
+        this.DateRetour = DateTime.MaxValue;
+    }
+    
+    public void      EnregistrerRetour   ()                     {this.DateRetour = DateTime.Now;}
+
+    public TimeSpan CalculerDureeEmprunt()
+    {
+        if (DateRetour < DateSortie)
+        {
+            throw new Exception("La date de sortie est posterieure à celle d'entrer.");
+        }
+        else
+        {
+            if (DateRetour == DateTime.MaxValue)
+            {
+                return DateTime.Now - DateSortie;
+            }
+            else
+            {
+                return DateRetour - DateSortie;
+            }
+        }
     }
 
-    public void      SetISBNLivre        (string isbnLivre)     {this.ISBNLivre = isbnLivre;}
-    public void      SetDateSortie       (DateTime dateSortie)  {this.DateSortie = dateSortie;}
-    public void      SetIDEmprunteur     (int idEmprunteur)     {this.IDEmprunteur = idEmprunteur;}
-    public void      SetDateRetour       (DateTime dateRetour)  {this.DateRetour = dateRetour;}
-    public string    GetISBNLivre        ()                     {return this.ISBNLivre;}
-    public int       GetIDEmprunteur     ()                     {return this.IDEmprunteur;}
-    public DateTime  GetDateSortie       ()                     {return this.DateSortie;}
-    public DateTime  GetDateRetour       ()                     {return this.DateRetour;}
-
-
-
-    public void EnregistrerRetour()
+    public Boolean EstRevenu()
     {
-        // Logic to register a book being returned.
-    }
-
-    private void CalculerDureeEmprunt()
-    {
-        // Logic to calculate the borrowing duration.
+        if (DateRetour == DateTime.MaxValue)
+        {
+            return false;
+        }
+        else
+        {
+            return true;
+        }
     }
 }
